@@ -1,8 +1,18 @@
 import "./App.css";
+import { Boton } from "./components/botones";
+import useSound from "use-sound";
+import urna from "./assets/urna.mpeg";
+import otra from "./assets/urna_eletronica.mp3";
+import toque from "./assets/button_tap.mpeg";
 
 function App() {
-  const botones = ["branco", "cancela", "confirma"];
+  const [playSound] = useSound(urna);
+  const [tap] = useSound(toque);
+  const botones = ["branco", "corrige", "confirma"];
   const digitos = [["1", "2", "3"], ["4", "5", "6"], ["7", "8", "9"], ["0"]];
+  /* const hola = (variable: any) => {
+    const [play] = useSound(variable)
+  }; */
   return (
     <div className="App">
       <div className="urna">
@@ -26,9 +36,12 @@ function App() {
             </div>
             <div className="teclado-botonera">
               {botones.map((item, index) => (
-                <div key={index} className={item}>
-                  {item}
-                </div>
+                <Boton
+                  key={index}
+                  leyenda={item}
+                  clase={item}
+                  accion={item === "confirma" ? playSound : tap}
+                />
               ))}
             </div>
           </div>

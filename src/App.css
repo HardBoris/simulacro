@@ -48,6 +48,7 @@ h1 {
   border-radius: 8px;
   box-shadow: 2px 2px 2px #282c34 inset;
   margin-bottom: 6%;
+  border: 1px solid black;
 }
 
 .urna-teclas-logo h1 {
@@ -104,7 +105,7 @@ h1 {
 }
 
 .branco,
-.cancela,
+.corrige,
 .confirma {
   width: 100px;
   height: 40px;
@@ -115,13 +116,14 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .branco {
   background-color: white;
 }
 
-.cancela {
+.corrige {
   background-color: orange;
 }
 

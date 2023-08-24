@@ -131,7 +131,7 @@ h1 {
   background-color: green;
 }
 
-@media (min-width: 769px) {
+/* @media (min-width: 769px) {
   .urna {
     width: 98vw;
     height: 70vh;
@@ -161,4 +161,4 @@ h1 {
   .urna-teclas-logo h1 {
     font-size: 1.8rem;
   }
-}
+} */

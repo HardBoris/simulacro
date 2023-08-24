@@ -15,7 +15,7 @@ function App() {
   const digitos = [["1", "2", "3"], ["4", "5", "6"], ["7", "8", "9"], ["0"]];
   const [primero, setPrimero] = useState("");
   const [segundo, setSegundo] = useState("");
-  const [pronto, setPronto] = useState(primero + segundo);
+  const [fim, setFim] = useState(false);
 
   const first = (n: string) => {
     tap();
@@ -43,14 +43,14 @@ function App() {
 
   const confirm = () => {
     playSound();
-    clearThis();
+    setFim(true);
   };
 
   return (
     <div className="App">
       <div className="urna">
         <div className="urna-display">
-          <EuVoto a={primero} b={segundo} foto={foto} />
+          <EuVoto a={primero} b={segundo} foto={foto} fim={fim} />
         </div>
         <div className="urna-teclas">
           <div className="urna-teclas-logo">

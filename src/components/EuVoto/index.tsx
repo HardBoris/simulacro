@@ -23,19 +23,19 @@ export const EuVoto = ({ a, b, foto, fim }: EuVotoProps) => {
             <div className="cuadro">{b}</div>
           </div>
           <div className="nombre">
-            <p className="titulo">
+            <div className="titulo">
               <div className="normal">{"nome:"}</div>{" "}
               {a + b !== ""
                 ? a + b === "22"
                   ? "Orcinei"
                   : `Outro Candidato`
                 : ""}
-            </p>
+            </div>
           </div>
         </div>
         <div className="imagen">
           <div className={a + b === "22" ? "foto" : "nada"}>
-            <img src={foto} alt="foto del candidato" />
+            {/* <img src={foto} alt="foto del candidato" /> */}
           </div>
         </div>
         <div className={a + b !== "" ? "instrucciones" : "nada"}>

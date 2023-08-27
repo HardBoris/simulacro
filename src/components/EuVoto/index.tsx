@@ -52,6 +52,12 @@ export const EuVoto = ({ a, b, foto, fim }: EuVotoProps) => {
           <p>LARANJA para reiniciar o seu voto</p>
         </div>
       </div>
+      <div className={a && b ? (a + b !== "22" ? "credito" : "nada") : "nada"}>
+        Imagem de{" "}
+        <a href="https://br.freepik.com/psd-gratuitas/ilustracao-3d-de-uma-pessoa-com-oculos-de-sol_27470334.htm#query=avatar&position=7&from_view=search&track=sph">
+          Freepik
+        </a>
+      </div>
       <div className={fim ? "fim" : "nada"}>FIM</div>
     </>
   );

@@ -175,6 +175,27 @@ h1 {
 
 @media (min-width: 769px) {
   .urna {
-    height: 60%;
+    width: 760px;
+    height: 380px;
+  }
+
+  .urna-teclas-logo {
+    font-size: 1rem;
+  }
+
+  /* .filas {
+    margin-top: 20px;
+  } */
+
+  .columnas {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+
+  .branco,
+  .corrige,
+  .confirma {
+    font-size: 0.7rem;
   }
 }
